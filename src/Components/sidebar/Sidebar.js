@@ -12,12 +12,16 @@ import PsychologyOutlinedIcon from "@mui/icons-material/PsychologyOutlined";
 import SettingsSuggestOutlinedIcon from "@mui/icons-material/SettingsSuggestOutlined";
 import PersonPinCircleOutlinedIcon from "@mui/icons-material/PersonPinCircleOutlined";
 import LogoutOutlinedIcon from "@mui/icons-material/LogoutOutlined";
+import SentimentSatisfiedOutlinedIcon from "@mui/icons-material/SentimentSatisfiedOutlined";
 
 function Sidebar() {
   return (
     <div className="sidebar">
       <div className="top">
-        <span className="logo">Admin Dashboard</span>
+        <span className="logo">
+          <SentimentSatisfiedOutlinedIcon />
+          Admin Dashboard
+        </span>
       </div>
       <hr />
       <div className="center">

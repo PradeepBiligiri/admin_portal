@@ -12,7 +12,7 @@ function Navbar() {
       <div className="wrapper">
         <div className="search">
           <input type="text" placeholder="Search...." />
-          <SearchSharpIcon />
+          <SearchSharpIcon className="searchicon" />
         </div>
         <div className="items">
           <div className="item">

@@ -1,0 +1,37 @@
+.widget {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  padding: 10px;
+  box-shadow: 2px 5px 11px -7px rgba(0, 0, 0, 0.69);
+  border-radius: 10px;
+  height: 100px;
+
+  .left,
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: center;
+    gap: 15px;
+
+    .title {
+      font-size: 14px;
+      font-weight: bold;
+      color: rgb(150, 150, 150);
+
+      border-bottom: 1px solid gray;
+      width: max-content;
+    }
+    .counter {
+      font-size: 28px;
+      font-weight: 300;
+      font-weight: bold;
+    }
+
+    .icons {
+      font-size: 50px;
+      color: gray;
+    }
+  }
+}
