@@ -9,6 +9,7 @@ import ListAltOutlinedIcon from "@mui/icons-material/ListAltOutlined";
 import QuestionAnswerRoundedIcon from "@mui/icons-material/QuestionAnswerRounded";
 import FeaturedChart from "../../Components/FeaturedChart/FeaturedChart";
 import Chart from "../../Components/chart/Chart";
+import Table from "../../Components/table/Table";
 function Home() {
   let data = [
     {
@@ -87,6 +88,12 @@ function Home() {
         <div className="charts">
           <FeaturedChart />
           <Chart />
+        </div>
+        <div className="listContainer">
+          <div className="listTitle">
+            Latest Transaction
+            <Table />
+          </div>
         </div>
       </div>
     </div>
