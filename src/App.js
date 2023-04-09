@@ -5,6 +5,7 @@ import Login from "./Pages/login/Login";
 import List from "./Pages/list/List";
 import Single from "./Pages/single/Single";
 import New from "./Pages/new/New";
+import { productInputs, userInputs } from "./formSource";
 
 function App() {
   // let DashboardData = [
@@ -42,12 +43,18 @@ function App() {
           <Route path="users">
             <Route index element={<List />} />
             <Route path=":userId" element={<Single />} />
-            <Route path="new" element={<New />} />
+            <Route
+              path="new"
+              element={<New inputs={userInputs} title="Add New Users" />}
+            />
           </Route>
           <Route path="products">
             <Route index element={<List />} />
             <Route path=":productId" element={<Single />} />
-            <Route path="new" element={<New />} />
+            <Route
+              path="new"
+              element={<New inputs={productInputs} title="Add New Products" />}
+            />
           </Route>
         </Route>
       </Routes>
