@@ -6,6 +6,7 @@ import List from "./Pages/list/List";
 import Single from "./Pages/single/Single";
 import New from "./Pages/new/New";
 import { productInputs, userInputs } from "./formSource";
+import "./style/dark.scss";
 
 function App() {
   // let DashboardData = [
@@ -35,7 +36,7 @@ function App() {
   //   },
   // ];
   return (
-    <div className="App">
+    <div className="app dark">
       <Routes>
         <Route path="/">
           <Route index element={<Home />} />
