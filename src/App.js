@@ -7,8 +7,11 @@ import Single from "./Pages/single/Single";
 import New from "./Pages/new/New";
 import { productInputs, userInputs } from "./formSource";
 import "./style/dark.scss";
+import { useContext } from "react";
+import { DarkModeContext } from "./Context/darkModeContext";
 
 function App() {
+  const { darkMode } = useContext(DarkModeContext);
   // let DashboardData = [
   //   {
   //     Title: "EARNINGS (MONTHLY)",
@@ -36,7 +39,7 @@ function App() {
   //   },
   // ];
   return (
-    <div className="app dark">
+    <div className={darkMode ? "app dark" : "app"}>
       <Routes>
         <Route path="/">
           <Route index element={<Home />} />
