@@ -36,7 +36,7 @@ function Sidebar() {
           <p className="title">MAIN</p>
           <li>
             <DashboardCustomizeSharpIcon className="icon" />
-            <span>Dashbpard</span>
+            <span>Dashboard</span>
           </li>
           <p className="title">LISTS</p>
           <Link to="/users" style={{ textDecoration: "none" }}>
